@@ -5,8 +5,13 @@
 {% endblock %}
 
 {% block body %}
+<!--Vamos a hacer un form, que realmente haga algo cuando lo apretemos, ahora que tenemos python-->
+<!--La accion va a ser llevaron a la funcion hello-->
+<!--El metodo va a ser post. Es decir que la info que ingrese, la voy a usar despues en la pagina hello.html-->    
     <form action="{{ url_for('hello') }}" method="post">
+<!--Y lo que voy a tener que ingresar, lo defino aca, en este caso el nombre-->
         <input type="text" name="name" placeholder="Enter Your Name">
+<!--Y agregamos un boton para subir esta info-->        
         <button>Submit</button>
     </form>
 {% endblock %}

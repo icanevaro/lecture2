@@ -3,9 +3,9 @@
 
 #Importamos flask (despues de descargarlo)
 from flask import Flask
-#Le damos el entorno de app
+#Asignamos una variable  con el nombre "app", para luego poder hacer acciones con ella
 app = Flask(__name__)
-#le indicamos la ruta
+#le indicamos la ruta. Es decir, cuando alguien vaya a la ruta que utilize el ambiente, se ejecuta lo siguiente:
 @app.route("/")
 #Definimos una variable que retorne algo
 def index():

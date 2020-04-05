@@ -4,8 +4,11 @@
         <title>My Website!</title>
     </head>
     <body>
+<!--Agregamos sintaxis Jinja2. Esto lo que significa es que, en <h1> es posible que agregrue un block de heading y un final (endblock). Esto de cuaqlueira de los dos archivos (index o more) -->
         <h1>{% block heading %}{% endblock %}</h1>
-
+<!--Si en layout.html agrego un heading, se va a agregar en las dos paginas (index y more)-->
+        <h2>Welcome!</h2>
+<!--Aca voy a tener lo que sea que haya en el body-->
         {% block body %}
         {% endblock %}
     </body>
